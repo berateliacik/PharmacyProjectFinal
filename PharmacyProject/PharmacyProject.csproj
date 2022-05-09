@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B57CC5E8-4066-4E23-9253-6251563B6DF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PharmacyProject</RootNamespace>
+    <AssemblyName>PharmacyProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDoktorHastaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorHastaEkle.Designer.cs">
+      <DependentUpon>FrmDoktorHastaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorHastaGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorHastaGuncelle.Designer.cs">
+      <DependentUpon>FrmDoktorHastaGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorRecete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorRecete.Designer.cs">
+      <DependentUpon>FrmDoktorRecete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneGiris.Designer.cs">
+      <DependentUpon>FrmEczaneGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneHastaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneHastaEkle.Designer.cs">
+      <DependentUpon>FrmEczaneHastaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneHastalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneHastalar.Designer.cs">
+      <DependentUpon>FrmEczaneHastalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneDoktor.Designer.cs">
+      <DependentUpon>FrmEczaneDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneKontrol.Designer.cs">
+      <DependentUpon>FrmEczaneKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturaDetayEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturaDetayEkle.Designer.cs">
+      <DependentUpon>FrmFaturaDetayEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHastaReceteEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHastaReceteEkle.Designer.cs">
+      <DependentUpon>FrmHastaReceteEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIlacYazDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIlacYazDoktor.Designer.cs">
+      <DependentUpon>FrmIlacYazDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReceteUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReceteUrunEkle.Designer.cs">
+      <DependentUpon>FrmReceteUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUrunBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUrunBilgi.Designer.cs">
+      <DependentUpon>FrmUrunBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneAna.Designer.cs">
+      <DependentUpon>FrmEczaneAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneSatis.Designer.cs">
+      <DependentUpon>FrmEczaneSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm5.Designer.cs">
+      <DependentUpon>frm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneFatura.Designer.cs">
+      <DependentUpon>FrmEczaneFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm7.Designer.cs">
+      <DependentUpon>frm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneTakas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneTakas.Designer.cs">
+      <DependentUpon>FrmEczaneTakas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneUrunEkle.Designer.cs">
+      <DependentUpon>FrmEczaneUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEczaneUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEczaneUrunler.Designer.cs">
+      <DependentUpon>FrmEczaneUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaGiris.Designer.cs">
+      <DependentUpon>FrmAnaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorGiris.Designer.cs">
+      <DependentUpon>FrmDoktorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorKaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorKaydol.Designer.cs">
+      <DependentUpon>FrmDoktorKaydol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorMain.Designer.cs">
+      <DependentUpon>FrmDoktorMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSignUp.Designer.cs">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="FrmDoktorHastaEkle.resx">
+      <DependentUpon>FrmDoktorHastaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorHastaGuncelle.resx">
+      <DependentUpon>FrmDoktorHastaGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorRecete.resx">
+      <DependentUpon>FrmDoktorRecete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneGiris.resx">
+      <DependentUpon>FrmEczaneGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneHastaEkle.resx">
+      <DependentUpon>FrmEczaneHastaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneHastalar.resx">
+      <DependentUpon>FrmEczaneHastalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneDoktor.resx">
+      <DependentUpon>FrmEczaneDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneKontrol.resx">
+      <DependentUpon>FrmEczaneKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturaDetayEkle.resx">
+      <DependentUpon>FrmFaturaDetayEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHastaReceteEkle.resx">
+      <DependentUpon>FrmHastaReceteEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIlacYazDoktor.resx">
+      <DependentUpon>FrmIlacYazDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReceteUrunEkle.resx">
+      <DependentUpon>FrmReceteUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUrunBilgi.resx">
+      <DependentUpon>FrmUrunBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneAna.resx">
+      <DependentUpon>FrmEczaneAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneSatis.resx">
+      <DependentUpon>FrmEczaneSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm5.resx">
+      <DependentUpon>frm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneFatura.resx">
+      <DependentUpon>FrmEczaneFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm7.resx">
+      <DependentUpon>frm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneTakas.resx">
+      <DependentUpon>FrmEczaneTakas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneUrunEkle.resx">
+      <DependentUpon>FrmEczaneUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEczaneUrunler.resx">
+      <DependentUpon>FrmEczaneUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaGiris.resx">
+      <DependentUpon>FrmAnaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorGiris.resx">
+      <DependentUpon>FrmDoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorKaydol.resx">
+      <DependentUpon>FrmDoktorKaydol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorMain.resx">
+      <DependentUpon>FrmDoktorMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSignUp.resx">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
